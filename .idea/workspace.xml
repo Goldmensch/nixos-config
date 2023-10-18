@@ -4,44 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nixos.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/grub.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/home-manager.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/locale_date.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/programs.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/services.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/sound.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/users.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/users/hosts/computhor/default.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/users/hosts/computhor/hardware.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/users/nick/default.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/users/nick/keys/yubikey.asc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/hyprland.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/mimeApps.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/packages.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/programs/broot.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/programs/default.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/programs/git.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/programs/gpg.nix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/nick/programs/zsh.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/old/users/flake.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts/computhor/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/default.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts/computhor/hardware.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/hardware.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/flake.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/flake.nix" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/hosts/computhor/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/old/hosts/computhor/default.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/hosts/computhor/hardware.nix" beforeDir="false" afterPath="$PROJECT_DIR$/old/hosts/computhor/hardware.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/nick/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/users/nick/default.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/nick/default.nix.save" beforeDir="false" afterPath="$PROJECT_DIR$/old/users/nick/default.nix.save" afterDir="false" />
+    <list default="true" id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="fix: pin entry">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts/computhor/users.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/users.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +16,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -97,11 +64,52 @@
       <workItem from="1697562876901" duration="2553000" />
       <workItem from="1697571570453" duration="5896000" />
       <workItem from="1697632869356" duration="3366000" />
-      <workItem from="1697646436138" duration="278000" />
+      <workItem from="1697646436138" duration="551000" />
+      <workItem from="1697646999221" duration="400000" />
+      <workItem from="1697647412487" duration="199000" />
+      <workItem from="1697647724790" duration="549000" />
     </task>
+    <task id="LOCAL-00001" summary="fix: pin entry">
+      <option name="closed" value="true" />
+      <created>1697647344495</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697647344495</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fix: pin entry">
+      <option name="closed" value="true" />
+      <created>1697647559588</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697647559588</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: pin entry">
+      <option name="closed" value="true" />
+      <created>1697647827803</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697647827803</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fix: pin entry">
+      <option name="closed" value="true" />
+      <created>1697647831765</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697647831765</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: Add new config" />
+    <MESSAGE value="fix: pin entry" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: pin entry" />
   </component>
 </project>

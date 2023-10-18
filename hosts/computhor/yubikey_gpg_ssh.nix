@@ -3,6 +3,7 @@
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
+      pinentryFlavor = "gnome3";
     };
   };
 
@@ -15,14 +16,15 @@
   environment = {
     systemPackages = with pkgs; [
       gnupg
+      pinentry-curses
 
       yubikey-personalization
     ];
 
-    shellInit = ''
-        gpg-connect-agent /bye
-        export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-    '';
+    shellInit = "
+      gpg-connect-agent /bye
+      export SHH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+    ";
 
   };
 }
