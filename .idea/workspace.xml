@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/nixos.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flake.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/grub.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/home-manager.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/locale_date.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/programs.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/services.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/sound.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/users.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/users/hosts/computhor/default.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/users/hosts/computhor/hardware.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/users/nick/default.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/users/nick/keys/yubikey.asc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/hyprland.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/mimeApps.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/packages.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/programs/broot.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/programs/default.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/programs/git.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/programs/gpg.nix" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/users/nick/programs/zsh.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flake.lock" beforeDir="false" afterPath="$PROJECT_DIR$/old/users/flake.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flake.nix" beforeDir="false" afterPath="$PROJECT_DIR$/flake.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts/computhor/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/default.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts/computhor/hardware.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/hardware.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/flake.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/flake.nix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/hosts/computhor/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/old/hosts/computhor/default.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/hosts/computhor/hardware.nix" beforeDir="false" afterPath="$PROJECT_DIR$/old/hosts/computhor/hardware.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/nick/default.nix" beforeDir="false" afterPath="$PROJECT_DIR$/users/nick/default.nix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/nick/default.nix.save" beforeDir="false" afterPath="$PROJECT_DIR$/old/users/nick/default.nix.save" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WtrmQx6EKRda0roP1zfwWlF3Sj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nick/nixos/users/nick&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/users/nick" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hosts/computhor" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="" />
+      <created>1697562875704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697562875704</updated>
+      <workItem from="1697562876901" duration="2553000" />
+      <workItem from="1697571570453" duration="5896000" />
+      <workItem from="1697632869356" duration="3366000" />
+      <workItem from="1697646436138" duration="278000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

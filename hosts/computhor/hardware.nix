@@ -18,7 +18,7 @@
       fsType = "ext4";
     };
 
-  fileSystems."/home/nick/data" = 
+  fileSystems."/home/nick/data" =
     { device = "/dev/disk/by-uuid/32c4e032-a65a-44e6-b0a9-dbc263f21885";
       fsType = "ext4";
     };
