@@ -11,6 +11,7 @@
       core.autocrlf = true;
       push.autpSetupRemote = true;
       pull.rebase = true;
+      safe.directory = "/etc/nixos";
     };
   };
 }
