@@ -7,7 +7,7 @@
       homecfg = "sudo nano /etc/nixos/users/nick/default.nix";
       nixcfg = "sudo nano /etc/nixos/hosts/computhor/default.nix";
       flakecfg = "sudo nano /etc/nixos/flake.nix";
-      renix = "sudo rsync -a --delete /home/nick/nixos/ /etc/nixos/ && sudo nixos-rebuild switch";
+      renix = "sudo nixos-rebuild switch";
     };
     plugins = [
       {

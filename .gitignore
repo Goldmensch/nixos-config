@@ -1,2 +1,4 @@
-old/
-**/keys/**
+result
+.tmp
+.idea
+**/keys
