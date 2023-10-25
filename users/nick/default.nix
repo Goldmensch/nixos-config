@@ -3,7 +3,7 @@
     ./packages.nix
     ./programs
     ./hyprland.nix
-    ./mimeApps.nix
+    ./xdg.nix
   ];
 
   home = {

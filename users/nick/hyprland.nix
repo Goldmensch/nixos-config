@@ -34,6 +34,7 @@
       bind = SUPER,p,togglesplit
       # applications
       bind = SUPER,m,exec,firefox
+      bind = SUPER,n,exec,kitty broot
       bind = SUPER,d,exec,rofi -show drun
       bind = SUPER,RETURN,exec,kitty
 
