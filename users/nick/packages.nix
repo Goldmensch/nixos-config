@@ -14,6 +14,7 @@
     zsh
     starship
     xdg-utils
+    whatsapp-for-linux
 
     # fonts
     nerdfonts

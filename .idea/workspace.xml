@@ -4,111 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="fix: pin entry">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts/computhor/users.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/users.nix" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" beforeDir="false" afterPath="$PROJECT_DIR$/hosts/computhor/yubikey_gpg_ssh.nix" afterDir="false" />
-    </list>
+    <list default="true" id="11e052ab-a1e2-45c2-a8cc-1de1d6fa9d71" name="Changes" comment="fix: pin entry" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2WtrmQx6EKRda0roP1zfwWlF3Sj" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/nick/nixos/users/nick&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/users/nick" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/hosts/computhor" />
-    </key>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+}]]></component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="7dc36bc9-a1de-4bee-a4ab-3937508b6245" name="Changes" comment="" />
-      <created>1697562875704</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1697562875704</updated>
-      <workItem from="1697562876901" duration="2553000" />
-      <workItem from="1697571570453" duration="5896000" />
-      <workItem from="1697632869356" duration="3366000" />
-      <workItem from="1697646436138" duration="551000" />
-      <workItem from="1697646999221" duration="400000" />
-      <workItem from="1697647412487" duration="199000" />
-      <workItem from="1697647724790" duration="549000" />
-    </task>
-    <task id="LOCAL-00001" summary="fix: pin entry">
-      <option name="closed" value="true" />
-      <created>1697647344495</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1697647344495</updated>
-    </task>
-    <task id="LOCAL-00002" summary="fix: pin entry">
-      <option name="closed" value="true" />
-      <created>1697647559588</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1697647559588</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fix: pin entry">
-      <option name="closed" value="true" />
-      <created>1697647827803</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1697647827803</updated>
-    </task>
-    <task id="LOCAL-00004" summary="fix: pin entry">
-      <option name="closed" value="true" />
-      <created>1697647831765</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1697647831765</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: Add new config" />
     <MESSAGE value="fix: pin entry" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: pin entry" />
   </component>
