@@ -39,6 +39,7 @@
         "SUPER,n,exec,kitty broot"
         "SUPER,d,exec,rofi -show drun"
         "SUPER,RETURN,exec,kitty"
+        "SUPER,b,exec,kitty pulsemixer"
 
         # window manager
         "SUPER_SHIFT,s,exec,shutdown now"

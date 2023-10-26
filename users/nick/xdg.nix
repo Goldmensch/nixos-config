@@ -16,6 +16,13 @@
         genericName = "Terminal file manager";
         terminal = true;
       };
+
+      pulsemixer = {
+        name = "Pulsemixer";
+        exec = "pulsemixer";
+        genericName = "Audio Mixer";
+        terminal = true;
+      };
     };
   };
 }

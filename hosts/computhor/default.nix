@@ -2,7 +2,7 @@
   imports = [
     ./hardware.nix
     ./home-manager.nix
-    ./grub.nix
+    ./bootloader.nix
     ./users.nix
     ./programs.nix
     ./yubikey_gpg_ssh.nix
