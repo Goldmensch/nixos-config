@@ -4,6 +4,7 @@
     ./programs
     ./hyprland.nix
     ./xdg.nix
+    ./sway_polkit_agent.nix
   ];
 
   home = {

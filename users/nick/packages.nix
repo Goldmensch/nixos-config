@@ -30,5 +30,8 @@
     # java
     temurin-bin-20
     gradle
+
+    gparted
+    polkit_gnome
   ];
 }

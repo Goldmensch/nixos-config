@@ -48,6 +48,7 @@
         # screenshot
         ''SUPER,print,exec,grim -g "$(slurp)" - | swappy -f -''
       ];
+
       bindm = [
        # window movement
        "SUPER,mouse:272,movewindow"
@@ -62,7 +63,6 @@
       ];
 
       input.kb_layout = "eu";
-
     };
   };
 }
