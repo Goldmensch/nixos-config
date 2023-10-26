@@ -1,4 +1,4 @@
-{ ... }: {
+{ nur, ... }: {
   imports = [
     ./hardware.nix
     ./home-manager.nix
@@ -11,6 +11,7 @@
   ];
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [ nur.overlay ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   networking.hostName = "computhor"; # Define your hostname.

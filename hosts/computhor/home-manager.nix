@@ -2,8 +2,10 @@
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
-    users.nick.imports = [
-      ../../users/nick
-    ];
+    users.nick = {
+      imports = [
+        ../../users/nick
+      ];
+    };
   };
 }

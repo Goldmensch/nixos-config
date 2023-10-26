@@ -5,6 +5,7 @@
     ./gpg.nix
     ./zsh.nix
     ./waybar.nix
+    ./firefox.nix
   ];
   programs = {
     home-manager.enable = true;
