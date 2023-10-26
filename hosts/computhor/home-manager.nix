@@ -3,7 +3,6 @@
     useUserPackages = true;
     useGlobalPkgs = true;
     users.nick.imports = [
-      hyprland.homeManagerModules.default
       ../../users/nick
     ];
   };
