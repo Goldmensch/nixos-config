@@ -40,6 +40,8 @@
         "SUPER,d,exec,rofi -show drun"
         "SUPER,RETURN,exec,kitty"
         "SUPER,b,exec,kitty pulsemixer"
+        "SUPER,v,exec,discord"
+        "SUPER,c,exec,idea-ultimate"
 
         # window manager
         "SUPER_SHIFT,s,exec,shutdown now"
