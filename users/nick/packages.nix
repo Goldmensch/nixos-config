@@ -33,5 +33,7 @@
 
     gparted
     polkit_gnome
+
+    prismlauncher
   ];
 }
