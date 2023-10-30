@@ -1,6 +1,8 @@
 { pkgs, ... }: {
   programs.firefox = {
     enable = true;
+    package = pkgs.firefox-wayland;
+
     profiles = {
       nick = {
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
@@ -18,7 +20,26 @@
           "ui.systemUsesDarkTheme" = 1;
 
           # preset shortcuts (top sites)
-          "browser.newtabpage.pinned" = ''[{"url":"https://www.youtube.com/","label":"YouTube"},{"url":"https://www.icloud.com/","label":"icloud"},{"url":"https://github.com/","label":"github"}]'';
+          "browser.newtabpage.pinned" = ''
+            [
+              {
+                "url": "https://www.youtube.com/",
+                "label": "YouTube"
+              },
+              {
+                "url": "https://www.icloud.com/",
+                "label": "icloud"
+              },
+              {
+                "url": "https://github.com/",
+                "label": "github"
+              },
+              {
+                "url": "https://search.nixos.org/packages",
+                "label": "Nix search"
+              }
+            ]
+          '';
 
           # fuck off sponsors // well doens't really work... fuck capitalism!!!
           "browser.newtabpage.activity-stream.showSponsoredTopSites" = false;

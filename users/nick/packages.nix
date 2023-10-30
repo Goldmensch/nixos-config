@@ -3,7 +3,6 @@
     cider
     htop
     discord
-    firefox
     jetbrains.idea-ultimate
     kitty
     rofi

@@ -63,6 +63,9 @@
 
       # autostart
       exec-once = [
+        "discord"
+        "cider"
+
         "waybar"
       ];
 
