@@ -7,11 +7,18 @@
         height = 30;
         position = "top";
         layer = "top";
-        modules-right = [ "pulseaudio" "clock" "tray" ];
+        modules-right = [ "network" "pulseaudio" "clock" "tray" ];
         modules-center = [ "hyprland/window" ];
         modules-left = [ "hyprland/workspaces" ];
 
         # module configs
+        "network" = {
+          format-ethernet = "{ipaddr}/{cidr} 🎮";
+          tooltip-format-ethernet = "{bandwidthTotalBytes} ➡️ {ifname} 🔗";
+
+          format-disconnected = "Disconnected ❌";
+        };
+
         "tray" = {
           spacing = 10;
           icon-size = 20;
@@ -30,12 +37,15 @@
 
         "pulseaudio" = {
           format = "{volume}% {icon}";
-          format-muted = "{icon}";
+          format-muted = "🔇";
           format-icons = {
-            muted = "🔇";
             speaker = [ "🔈" "🔉" "🔊" ];
           };
+          tooltip-format = "{desc}";
           on-click = "kitty pulsemixer";
+          on-click-right = "pulsemixer --toggle-mute";
+          scroll-step = 5;
+          max-volume = 150;
         };
       };
     };
