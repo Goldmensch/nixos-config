@@ -3,10 +3,11 @@
     enable = true;
     enableCompletion = true;
     enableAutosuggestions = true;
+    autocd = true;
     shellAliases = {
-      homecfg = "sudo nano /etc/nixos/users/nick/default.nix";
-      nixcfg = "sudo nano /etc/nixos/hosts/computhor/default.nix";
-      flakecfg = "sudo nano /etc/nixos/flake.nix";
+      homecfg = "broot /etc/nixos/users/nick/";
+      nixcfg = "broot /etc/nixos/hosts/computhor";
+      flakecfg = "$EDITOR /etc/nixos/flake.nix";
       renix = "sudo nixos-rebuild switch && sudo systemctl restart home-manager-nick.service";
     };
     plugins = [

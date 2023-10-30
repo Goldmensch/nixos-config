@@ -14,6 +14,10 @@
 
     keyboard.layout = "eu";
 
+    sessionVariables = {
+      EDITOR = "micro";
+    };
+
     stateVersion = "23.05";
   };
 }
