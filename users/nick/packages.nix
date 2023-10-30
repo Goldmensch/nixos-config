@@ -14,6 +14,7 @@
     starship
     xdg-utils
     whatsapp-for-linux
+    playerctl
 
     # fonts
     nerdfonts
@@ -34,5 +35,7 @@
     polkit_gnome
 
     prismlauncher
+
+    qalculate-gtk
   ];
 }

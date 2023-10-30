@@ -8,7 +8,14 @@
       ];
 
       # fix intellij popup bugs
-      "windowrule" = "center, class:jetbrains-idea";
+      windowrule = [
+       "center, jetbrains-idea"
+
+       # qalculate-gtk
+       "float, qalculate-gtk"
+       "size 600 700, qalculate-gtk"
+       "center, qalculate-gtk"
+      ];
 
       bind = [
         # window focus
@@ -40,9 +47,14 @@
         "SUPER,d,exec,rofi -show drun"
         "SUPER,RETURN,exec,kitty"
         "SUPER,b,exec,kitty pulsemixer"
-        "SUPER,v,exec,discord"
+        "SUPER,v,exec,hyprctl dispatch focuswindow discord && discord"
         "SUPER,c,exec,idea-ultimate"
         "SUPER,x,exec,kitty micro"
+
+        ",XF86Tools,exec,hyprctl dispatch focuswindow Cider && cider" # it's actually music, but my keyboard sucks
+        ",XF86HomePage,exec,kitty broot /etc/nixos/"
+        ",XF86Calculator,exec,qalculate-gtk"
+
 
         # window manager
         "SUPER_SHIFT,s,exec,shutdown now"
@@ -51,6 +63,22 @@
         ## utils
         # screenshot
         ''SUPER,print,exec,grim -g "$(slurp)" - | swappy -f -''
+      ];
+
+
+      bindle = [
+        # sound
+        ",XF86AudioRaiseVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+        ",XF86AudioLowerVolume,exec,wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+      ];
+
+      bindl = [
+        # sound
+        ",XF86AudioMute,exec,wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        # multi media
+        ",XF86AudioPlay,exec,playerctl play-pause"
+        ",XF86AudioNext,exec,playerctl next"
+        ",XF86AudionPrev,exec,playerctl previous"
       ];
 
       bindm = [
@@ -63,9 +91,6 @@
 
       # autostart
       exec-once = [
-        "discord"
-        "cider"
-
         "waybar"
       ];
 

@@ -43,7 +43,7 @@
           };
           tooltip-format = "{desc}";
           on-click = "kitty pulsemixer";
-          on-click-right = "pulsemixer --toggle-mute";
+          on-click-right = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
           scroll-step = 5;
           max-volume = 150;
         };
