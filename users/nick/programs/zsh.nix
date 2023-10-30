@@ -7,7 +7,7 @@
       homecfg = "sudo nano /etc/nixos/users/nick/default.nix";
       nixcfg = "sudo nano /etc/nixos/hosts/computhor/default.nix";
       flakecfg = "sudo nano /etc/nixos/flake.nix";
-      renix = "sudo nixos-rebuild switch && systemctl restart home-manager-nick.service";
+      renix = "sudo nixos-rebuild switch && sudo systemctl restart home-manager-nick.service";
     };
     plugins = [
       {

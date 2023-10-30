@@ -15,14 +15,14 @@
     nur.url = "github:nix-community/nur";
   };
 
-  outputs = { self, nixpkgs, hyprland, home-manager, nur }@inputs: {
+ outputs = { self, nixpkgs, hyprland, home-manager, nur }@inputs: {
     nixosConfigurations.computhor = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = inputs;
       modules = [
         hyprland.nixosModules.default
         home-manager.nixosModules.home-manager
-
+        
         ./hosts/computhor
       ];
     };

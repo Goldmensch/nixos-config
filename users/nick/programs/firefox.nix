@@ -8,7 +8,7 @@
           ecosia
         ];
         search = {
-          default = "ecosia";
+          default = "Ecosia Search";
           force = true;
         };
         settings = {

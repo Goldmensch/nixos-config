@@ -42,6 +42,7 @@
         "SUPER,b,exec,kitty pulsemixer"
         "SUPER,v,exec,discord"
         "SUPER,c,exec,idea-ultimate"
+        "SUPER,x,exec,kitty micro"
 
         # window manager
         "SUPER_SHIFT,s,exec,shutdown now"

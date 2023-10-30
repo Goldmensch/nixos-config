@@ -23,6 +23,13 @@
         genericName = "Audio Mixer";
         terminal = true;
       };
+
+      micro = {
+        name = "Micro";
+        exec = "micro";
+        genericName = "Terminal Editor";
+        terminal = true;
+      };
     };
   };
 }

@@ -10,5 +10,6 @@
   programs = {
     home-manager.enable = true;
     starship.enable = true;
+    micro.enable = true;
   };
 }
