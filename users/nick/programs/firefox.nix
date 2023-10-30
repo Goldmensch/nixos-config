@@ -5,10 +5,9 @@
       nick = {
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
           bitwarden
-          ecosia
         ];
         search = {
-          default = "Ecosia Search";
+          default = "DuckDuckGo";
           force = true;
         };
         settings = {
