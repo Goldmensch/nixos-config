@@ -7,14 +7,16 @@
         "DP-1,2560x1440@165hz,2560x0,1"
       ];
 
-      # fix intellij popup bugs
       windowrule = [
-       "center, jetbrains-idea"
-
        # qalculate-gtk
        "float, qalculate-gtk"
        "size 600 700, qalculate-gtk"
        "center, qalculate-gtk"
+      ];
+
+      workspace = [
+        "2,monitor:DP-2,default:true"
+        "1,monitor:DP-1,default:true"
       ];
 
       bind = [
@@ -89,8 +91,12 @@
        "SUPER,mouse:273,resizewindow"
       ];
 
-      # autostart
       exec-once = [
+        # fix for gtk apps taking 20+ seconds to start
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+        "systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
+
+        # autostart
         "waybar"
       ];
 
