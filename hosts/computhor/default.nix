@@ -1,4 +1,4 @@
-{ nur, ... }: {
+{ nur, pkgs, ... }: {
   imports = [
     ./hardware.nix
     ./home-manager.nix
@@ -8,6 +8,7 @@
     ./yubikey_gpg_ssh.nix
     ./locale_date.nix
     ./sound.nix
+    ./printing.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

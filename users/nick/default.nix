@@ -6,6 +6,7 @@
     ./hyprland.nix
     ./xdg.nix
     ./sway_polkit_agent.nix
+    ./gtk.nix
   ];
 
   home = {

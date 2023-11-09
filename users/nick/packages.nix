@@ -37,5 +37,18 @@
     prismlauncher
 
     qalculate-gtk
+
+    # libreoffice
+    libreoffice-qt
+    hunspellDicts.de_DE
+    hunspellDicts.en_US
+    
+    # games
+    lutris
+    winetricks
+    wineWowPackages.waylandFull
+    libselinux
+    protonup-qt
+    steam
   ];
 }

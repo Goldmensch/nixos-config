@@ -30,6 +30,12 @@
         genericName = "Terminal Editor";
         terminal = true;
       };
+
+      the-settlers-iv = {
+      	name = "The Settlers IV - History Edition";
+      	terminal = true;
+      	exec = "lutris lutris:rungame/the-settlers-iv-history-edition";
+      };
     };
   };
 }
