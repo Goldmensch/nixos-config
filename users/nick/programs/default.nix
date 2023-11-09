@@ -5,11 +5,11 @@
     ./gpg.nix
     ./zsh.nix
     ./waybar.nix
+    ./micro.nix
     ./firefox.nix
   ];
   programs = {
     home-manager.enable = true;
     starship.enable = true;
-    micro.enable = true;
   };
 }

@@ -38,6 +38,8 @@
 
     qalculate-gtk
 
+    wl-clipboard
+    
     # libreoffice
     libreoffice-qt
     hunspellDicts.de_DE
