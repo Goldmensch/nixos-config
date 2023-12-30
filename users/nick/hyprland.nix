@@ -1,4 +1,4 @@
-{ ... }: {
+{ hyprland, ... }: {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
@@ -92,12 +92,11 @@
       ];
 
       exec-once = [
-        # fix for gtk apps taking 20+ seconds to start
-        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-        "systemctl --user import-environment DISPLAY WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
-
-        # autostart
         "waybar"
+      ];
+
+      exec = [
+        "dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK"
       ];
 
       input.kb_layout = "eu";

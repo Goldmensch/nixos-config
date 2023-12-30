@@ -7,6 +7,7 @@
     ./waybar.nix
     ./micro.nix
     ./firefox.nix
+    ./ssh.nix
   ];
   programs = {
     home-manager.enable = true;

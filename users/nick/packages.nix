@@ -1,5 +1,7 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
+    zotero
+    exfatprogs
     cider
     htop
     discord
@@ -16,6 +18,8 @@
     whatsapp-for-linux
     playerctl
 
+    ntfs3g
+
     # fonts
     nerdfonts
 
@@ -31,6 +35,8 @@
     temurin-bin-20
     gradle
 
+ 
+    ventoy     
     gparted
     polkit_gnome
 
@@ -38,7 +44,11 @@
 
     qalculate-gtk
 
+    texmaker
     wl-clipboard
+
+    zip
+    unzip
     
     # libreoffice
     libreoffice-qt

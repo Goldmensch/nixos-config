@@ -1,4 +1,4 @@
-{ nur, ... }: {
+{ nur, nixpkgs, ... }: {
 
   imports = [
     ./packages.nix
@@ -19,6 +19,6 @@
       EDITOR = "micro";
     };
 
-    stateVersion = "23.05";
+    stateVersion = "23.11";
   };
 }

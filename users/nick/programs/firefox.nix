@@ -37,6 +37,10 @@
               {
                 "url": "https://search.nixos.org/packages",
                 "label": "Nix search"
+              },
+              {
+                "url": "http://localhost:631/admin",
+                "label": "Cups"
               }
             ]
           '';

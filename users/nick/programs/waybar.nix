@@ -1,4 +1,4 @@
-{
+{ pkgs, ... }: {
   programs.waybar = {
     enable = true;
     settings = {
@@ -48,6 +48,17 @@
           max-volume = 150;
         };
       };
+    };
+  };
+
+  systemd.user.services.waybar = {
+    Service = {
+      ExecStart = "${pkgs.waybar}/bin/waybar";
+      Restart = "always";
+    };
+
+    Install = {
+      WantedBy = [ "graphical-session.target" ];
     };
   };
 }
