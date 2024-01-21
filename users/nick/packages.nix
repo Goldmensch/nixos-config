@@ -18,6 +18,8 @@
     whatsapp-for-linux
     playerctl
 
+    neofetch
+
     ntfs3g
 
     # fonts
@@ -32,7 +34,7 @@
     pulsemixer
 
     # java
-    temurin-bin-20
+    temurin-bin-21
     gradle
 
  
