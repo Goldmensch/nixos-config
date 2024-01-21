@@ -41,6 +41,14 @@
               {
                 "url": "http://localhost:631/admin",
                 "label": "Cups"
+              },
+              {
+                "url": "http://192.168.178.167:8123",
+                "label": "HomeAssistant"
+              },
+              {
+                "url": "https://www.lernsax.de/wws/9.php#/wws/100001.php?redirect_after_login=1",
+                "label": "Lernsax"
               }
             ]
           '';
