@@ -1,5 +1,11 @@
-{ pkgs, ... }: {
+{ pkgs, ... }: 
+let 
+in {
   home.packages = with pkgs; [
+    webcord
+    lm_sensors
+    bottom
+    parted
     zotero
     exfatprogs
     cider
@@ -34,9 +40,6 @@
     pulsemixer
 
     # java
-    temurin-bin-21
-    gradle
-
  
     ventoy     
     gparted

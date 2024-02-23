@@ -1,4 +1,11 @@
 {pkgs, ... }: {
-#    xdg.portal.enable = true;
- #   xdg.portal.configPackages = [ pkgs.xdg-desktop-portal-hyprland ];
+  xdg = {
+    portal = {
+      enable = true;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+    };
+  };
 }

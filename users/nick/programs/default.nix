@@ -7,6 +7,7 @@
     ./waybar.nix
     ./micro.nix
     ./firefox.nix
+    ./direnv.nix
     ./ssh.nix
   ];
   programs = {

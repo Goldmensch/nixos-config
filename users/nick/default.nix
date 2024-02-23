@@ -17,6 +17,7 @@
 
     sessionVariables = {
       EDITOR = "micro";
+      XDG_CURRENT_DESKTOP = "wayland";
     };
 
     stateVersion = "23.11";
