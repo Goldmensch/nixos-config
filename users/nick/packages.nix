@@ -13,6 +13,8 @@ in {
     discord
     webcord
 
+    unstable.kdePackages.krohnkite
+
     kitty
     rofi-wayland
     htop
