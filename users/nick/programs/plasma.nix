@@ -73,12 +73,15 @@
       "mediacontrol"."playpausemedia" = "Media Play";
       "mediacontrol"."previousmedia" = "Media Previous";
       "mediacontrol"."stopmedia" = "Media Stop";
-      "firefox"."firefox" = "Meta+m";
-      "services/org.kde.konsole.desktop"."_launch" = "Meta+Return"; # launch konsole
-      "services/org.kde.dolphin.desktop"."_launch" = "Meta+N"; # laucnh dolphin
-      "services/firefox.desktop"."_launch" = "Meta+m"; # launch firefox
 
+      "services/firefox.desktop"."_launch" = "Meta+M";
+      "services/org.kde.dolphin.desktop"."_launch" = "Meta+N";
+      "services/org.kde.konsole.desktop"."_launch" = "Meta+Return";
 
+      "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
+      "services/org.kde.spectacle.desktop"."RecordScreent" = "Meta+Alt+R";
+      "services/org.kde.spectacle.desktop"."RecordWindow" = "Meta+Ctrl+R";
+      "services/org.kde.spectacle.desktop"."_launch" = "Print";
     };
     configFile = {
       "plasma-localerc"."Formats"."LANG" = "en_US.UTF-8";

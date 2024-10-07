@@ -9,7 +9,10 @@ in {
     exfatprogs
     cider
     htop
+
     discord
+    webcord
+
     kitty
     rofi-wayland
     htop
