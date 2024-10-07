@@ -2,6 +2,9 @@
 let 
 in {
   home.packages = with pkgs; [
+    thunderbird
+
+    vlc
     parted
     exfatprogs
     cider
@@ -12,7 +15,6 @@ in {
     htop
     git
     wget
-    broot
     zsh
     xdg-utils
     whatsapp-for-linux
@@ -27,6 +29,7 @@ in {
 
     # zsh theme
     starship
+
 
     # screenshots
     slurp
@@ -47,6 +50,7 @@ in {
 
     zip
     unzip
+    libsForQt5.ark
     
     # libreoffice
     libreoffice-qt

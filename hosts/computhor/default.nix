@@ -4,9 +4,9 @@
     ./bootloader.nix
     ./hardware.nix
     ./printing.nix
+    ./podman.nix
+    ./kde.nix
   ];
-
-  home-manager.users.nick.imports = [ ./home ];
 
   networking.hostName = "computhor";
 }

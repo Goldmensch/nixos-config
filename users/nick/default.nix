@@ -1,12 +1,11 @@
-{ nur, nixpkgs, ... }: {
+{ nur, nixpkgs, plasma-manager, ... }: {
 
   imports = [
+    plasma-manager.homeManagerModules.plasma-manager
+    
     ./packages.nix
     ./programs
-    ./hyprland.nix
     ./xdg.nix
-    ./sway_polkit_agent.nix
-    ./gtk.nix
   ];
 
   home = {

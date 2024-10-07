@@ -2,7 +2,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
-    enableAutosuggestions = true;
+    autosuggestion.enable = true;
     autocd = true;
     shellAliases = {
       homecfg = "broot /etc/nixos/users/nick/";

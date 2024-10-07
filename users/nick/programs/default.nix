@@ -1,15 +1,15 @@
 { ... }: {
   imports = [
     ./obs.nix
-    ./broot.nix
+    ./yazi.nix
     ./git.nix
     ./gpg.nix
     ./zsh.nix
-    ./waybar.nix
     ./micro.nix
     ./firefox.nix
     ./direnv.nix
     ./ssh.nix
+    ./plasma.nix
   ];
   programs = {
     home-manager.enable = true;

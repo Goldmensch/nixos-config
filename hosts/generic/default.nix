@@ -7,7 +7,7 @@
     ./locale_date.nix
     ./sound.nix
     ./printing.nix
-    ./not_in_hm_nick.nix
+#    ./not_in_hm_nick.nix
   ];
 
   nixpkgs.config.allowUnfree = true;

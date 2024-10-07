@@ -48,6 +48,10 @@
               {
                 "url": "https://www.lernsax.de/wws/9.php#/wws/100001.php?redirect_after_login=1",
                 "label": "Lernsax"
+              },
+              {
+                "url": "https://codeberg.org/",
+                "label": "Codeberg"
               }
             ]
           '';

@@ -10,13 +10,6 @@
     };
 
     desktopEntries = {
-      broot = {
-        name = "Broot";
-        exec = "broot";
-        genericName = "Terminal file manager";
-        terminal = true;
-      };
-
       pulsemixer = {
         name = "Pulsemixer";
         exec = "pulsemixer";
