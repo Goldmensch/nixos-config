@@ -21,7 +21,6 @@
     panels = [
       {
         location = "bottom";
-        height = 40;
         widgets = [
           "org.kde.plasma.kickoff"
           "org.kde.plasma.pager"
@@ -31,6 +30,7 @@
           "org.kde.plasma.digitalclock"
           "org.kde.plasma.showdesktop"
         ];
+        screen = "all";
       }
     ];
 
@@ -48,45 +48,28 @@
       "kwin"."Show Desktop" = "Meta+D";
 
       # krohnkite
-      "kwin"."KrohnkiteDecrease" = [ ];
-      "kwin"."KrohnkiteFloatAll" = [ ];
-      "kwin"."KrohnkiteFloatingLayout" = [ ];
       "kwin"."KrohnkiteFocusDown" = "Meta+Down";
       "kwin"."KrohnkiteFocusLeft" = "Meta+Left";
-      "kwin"."KrohnkiteFocusNext" = [ ];
-      "kwin"."KrohnkiteFocusPrev" = [ ];
       "kwin"."KrohnkiteFocusRight" = "Meta+Right";
       "kwin"."KrohnkiteFocusUp" = "Meta+Up";
-      "kwin"."KrohnkiteGrowHeight" = [ ];
-      "kwin"."KrohnkiteIncrease" = [ ];
-      "kwin"."KrohnkiteMonocleLayout" = [ ];
-      "kwin"."KrohnkiteNextLayout" = [ ];
-      "kwin"."KrohnkitePreviousLayout" = [ ];
-      "kwin"."KrohnkiteQuarterLayout" = [ ];
-      "kwin"."KrohnkiteRotate" = [ ];
-      "kwin"."KrohnkiteRotatePart" = [ ];
-      "kwin"."KrohnkiteSetMaster" = [ ];
       "kwin"."KrohnkiteShiftDown" = "Meta+Shift+Down";
       "kwin"."KrohnkiteShiftLeft" = "Meta+Shift+Left";
       "kwin"."KrohnkiteShiftRight" = "Meta+Shift+Right";
       "kwin"."KrohnkiteShiftUp" = "Meta+Shift+Up";
-      "kwin"."KrohnkiteShrinkHeight" = [ ];
-      "kwin"."KrohnkiteShrinkWidth" = [ ];
-      "kwin"."KrohnkiteSpiralLayout" = [ ];
-      "kwin"."KrohnkiteSpreadLayout" = [ ];
-      "kwin"."KrohnkiteStackedLayout" = [ ];
-      "kwin"."KrohnkiteStairLayout" = [ ];
-      "kwin"."KrohnkiteTileLayout" = [ ];
       "kwin"."KrohnkiteToggleFloat" = "Meta+Shift+F";
-      "kwin"."KrohnkiteTreeColumnLayout" = [ ];
-      "kwin"."KrohnkitegrowWidth" = [ ];
 
-      "kwin"."Window to Next Screen" = "Meta+Ctrl+Right,,Move Window to Next Screen";
+      "kwin"."Window to Next Screen" = "Meta+Ctrl+Right";
+      "kwin"."Switch to Next Screen" = "Meta+Ctrl+Left";
 
       "kwin"."Window Close" = "Meta+q";
       "kwin"."Window Maximize" = "Meta+f";
       "kwin"."Window Minimize" = "Meta+j";
       "kwin"."Window Operations Menu" = "Alt+F3";
+
+      "kwin"."Walk Through Windows" = "Alt+Tab";
+      "kwin"."Walk Through Windows (Reverse)" = "Alt+Shift+Tab";
+
+      "kwin"."view_actual_size" = "Meta+0";
 
       "ksmserver"."Lock Session" = ["Meta+L" "Screensaver,Meta+L" "Screensaver,Lock Session"];
 
@@ -102,10 +85,6 @@
       "services/firefox.desktop"."_launch" = "Meta+M";
       "services/org.kde.dolphin.desktop"."_launch" = "Meta+N";
       "services/org.kde.konsole.desktop"."_launch" = "Meta+Return";
-
-      "kwin"."Walk Through Windows" = "Alt+Tab";
-      "kwin"."Walk Through Windows (Reverse)" = "Alt+Shift+Tab";
-
       "services/org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Meta+Shift+S";
       "services/org.kde.spectacle.desktop"."RecordScreent" = "Meta+Alt+R";
       "services/org.kde.spectacle.desktop"."RecordWindow" = "Meta+Ctrl+R";
@@ -113,6 +92,30 @@
 
 
       # UNSET
+      "kwin"."KrohnkiteTreeColumnLayout" = [ ];
+      "kwin"."KrohnkitegrowWidth" = [ ];
+      "kwin"."KrohnkiteShrinkHeight" = [ ];
+      "kwin"."KrohnkiteShrinkWidth" = [ ];
+      "kwin"."KrohnkiteSpiralLayout" = [ ];
+      "kwin"."KrohnkiteSpreadLayout" = [ ];
+      "kwin"."KrohnkiteStackedLayout" = [ ];
+      "kwin"."KrohnkiteStairLayout" = [ ];
+      "kwin"."KrohnkiteTileLayout" = [ ];
+      "kwin"."KrohnkiteGrowHeight" = [ ];
+      "kwin"."KrohnkiteIncrease" = [ ];
+      "kwin"."KrohnkiteMonocleLayout" = [ ];
+      "kwin"."KrohnkiteNextLayout" = [ ];
+      "kwin"."KrohnkitePreviousLayout" = [ ];
+      "kwin"."KrohnkiteQuarterLayout" = [ ];
+      "kwin"."KrohnkiteRotate" = [ ];
+      "kwin"."KrohnkiteRotatePart" = [ ];
+      "kwin"."KrohnkiteSetMaster" = [ ];
+      "kwin"."KrohnkiteFocusNext" = [ ];
+      "kwin"."KrohnkiteFocusPrev" = [ ];
+      "kwin"."KrohnkiteDecrease" = [ ];
+      "kwin"."KrohnkiteFloatAll" = [ ];
+      "kwin"."KrohnkiteFloatingLayout" = [ ];
+
       "ksmserver"."Halt Without Confirmation" = [ ];
       "ksmserver"."Log Out" = [ ];
       "ksmserver"."Log Out Without Confirmation" = [ ];
@@ -167,7 +170,6 @@
       "kwin"."Switch to Desktop 8" = [ ];
       "kwin"."Switch to Desktop 9" = [ ];
       "kwin"."Switch to Next Desktop" = [ ];
-      "kwin"."Switch to Next Screen" = [ ];
       "kwin"."Switch to Previous Desktop" = [ ];
       "kwin"."Switch to Previous Screen" = [ ];
       "kwin"."Switch to Screen 0" = [ ];
@@ -249,7 +251,7 @@
       "kwin"."Window to Desktop 9" = [ ];
       "kwin"."Window to Next Desktop" = [ ];
       "kwin"."Window to Previous Desktop" = [ ];
-      "kwin"."Window to Previous Screen" = ",Meta+Shift+Left,Move Window to Previous Screen";
+      "kwin"."Window to Previous Screen" = [ ];
       "kwin"."Window to Screen 0" = [ ];
       "kwin"."Window to Screen 1" = [ ];
       "kwin"."Window to Screen 2" = [ ];
@@ -258,7 +260,6 @@
       "kwin"."Window to Screen 5" = [ ];
       "kwin"."Window to Screen 6" = [ ];
       "kwin"."Window to Screen 7" = [ ];
-      "kwin"."view_actual_size" = "Meta+0";
       "kwin"."view_zoom_in" = [ ];
       "kwin"."view_zoom_out" = [ ];
       "org_kde_powerdevil"."Decrease Keyboard Brightness" = [ ];
@@ -315,11 +316,15 @@
       "kwinrc"."Script-krohnkite"."enableTileLayout" = false;
       "kwinrc"."Script-krohnkite"."monocleMaximize" = false;
       "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-1:btreelayout,DP-2:btreelayout";
+      "kwinrc"."Script-krohnkite"."tileLayoutGap" = 8;
 
       "kwinrc"."Windows"."FocusPolicy" = "FocusFollowsMouse";
       "kwinrc"."Windows"."SeparateScreenFocus" = true;
       "kwinrc"."Windows"."DelayFocusInterval" = 0;
       "kwinrc"."Windows"."NextFocusPrefersMouse" = false;
+      "kwinrc"."Windows"."ActiveMouseScreen" = false;
+
+      "kdeglobals"."WM"."frame" = "211,40,0";
 
       "spectaclerc"."ImageSave"."translatedScreenshotsFolder" = "Screenshots";
       "spectaclerc"."VideoSave"."translatedScreencastsFolder" = "Screencasts";

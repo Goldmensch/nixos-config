@@ -17,7 +17,6 @@
   boot.kernel.sysctl."kernel.perf_event_paranoid" = 1;
   boot.kernel.sysctl."kernel.kptr_restrict" = 0;
 
-  hardware.opengl.driSupport = true;
   # For 32 bit applications
   hardware.opengl.driSupport32Bit = true;
 
