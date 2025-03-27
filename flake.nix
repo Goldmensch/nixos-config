@@ -23,8 +23,7 @@
       specialArgs = inputs;
       modules = [
         home-manager.nixosModules.home-manager
-
-        ./hosts/computhor
+	./hosts/computhor
       ];
     };
     nixosConfigurations.gpn-computhor = nixpkgs.lib.nixosSystem {

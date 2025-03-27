@@ -11,14 +11,12 @@
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "ahci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" "wl" ];
-  boot.extraModulePackages = [ config.boot.kernelPackages.broadcom_sta ];
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.kernel.sysctl."kernel.perf_event_paranoid" = 1;
   boot.kernel.sysctl."kernel.kptr_restrict" = 0;
 
   # For 32 bit applications
-  hardware.opengl.driSupport32Bit = true;
+  hardware.graphics.enable32Bit = true;
 
   fileSystems."/" =
     { device = "/dev/disk/by-label/nixos";
@@ -48,5 +46,8 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
 }
 

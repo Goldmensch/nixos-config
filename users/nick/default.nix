@@ -6,6 +6,7 @@
     ./packages.nix
     ./programs
     ./xdg.nix
+    ./qt.nix
   ];
 
   home = {

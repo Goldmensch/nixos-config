@@ -2,6 +2,8 @@
 let 
 in {
   home.packages = with pkgs; [
+    droidcam
+
     thunderbird
 
     vlc

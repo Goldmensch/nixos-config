@@ -7,11 +7,11 @@
     ./locale_date.nix
     ./sound.nix
     ./printing.nix
-#    ./not_in_hm_nick.nix
+    ./nix.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ nur.overlay ];
+  nixpkgs.overlays = [ nur.overlays.default ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   environment.systemPackages = [
