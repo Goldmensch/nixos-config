@@ -1,10 +1,10 @@
 { ... }: {
   programs.git = {
     enable = true;
-    userName = "Nick Hensel";
-    userEmail = "nickhensel25@icloud.com";
+    userName = "Goldmensch";
+    userEmail = "pm@goldmensch.dev";
     signing = {
-      key = "D8B927FD1F38609C8CD0CAE8084F9B575C002B59";
+      key = "0x185863298512EE59";
       signByDefault = true;
     };
     extraConfig = {

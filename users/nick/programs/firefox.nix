@@ -5,7 +5,8 @@
     profiles = {
       nick = {
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-          bitwarden
+          proton-pass
+          proton-vpn
         ];
         search = {
           default = "DuckDuckGo";
@@ -46,12 +47,12 @@
                 "label": "HomeAssistant"
               },
               {
-                "url": "https://www.lernsax.de/wws/9.php#/wws/100001.php?redirect_after_login=1",
-                "label": "Lernsax"
+                "url": "http://192.168.178.167/",
+                "label": "Mainsail"
               },
               {
-                "url": "https://codeberg.org/",
-                "label": "Codeberg"
+                "url": "https://account.proton.me/apps",
+                "label": "Proton Apps"
               }
             ]
           '';

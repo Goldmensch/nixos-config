@@ -34,6 +34,33 @@
       }
     ];
 
+    hotkeys.commands = {
+      "launch-proton" = {
+        name = "Launch Proton";
+        key = "Meta+P";
+        command = "firefox https://account.proton.me/apps";
+      };
+
+      "launch-mail" = {
+        name = "Launch Proton Mail";
+        key = "Meta+Shift+P";
+        command = "firefox https://mail.proton.me";
+      };
+
+      "launch-pass" = {
+        name = "Launch Proton Pass";
+        key = "Meta+Ctrl+P";
+        command = "firefox https://pass.proton.me/";
+      };
+
+      "launch-calender" = {
+        name = "Launch Proton Calender";
+        key = "Meta+Alt+P";
+        command = "firefox https://calendar.proton.me";
+      };
+    };
+
+
     shortcuts = {
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
       "kmix"."decrease_volume" = "Volume Down";

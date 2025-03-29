@@ -2,9 +2,13 @@
 let 
 in {
   home.packages = with pkgs; [
+    orca-slicer
     droidcam
 
     thunderbird
+
+
+    kdePackages.krohnkite
 
     vlc
     parted
@@ -15,10 +19,7 @@ in {
     discord
     webcord
 
-    unstable.kdePackages.krohnkite
-
     kitty
-    rofi-wayland
     htop
     git
     wget
@@ -64,6 +65,6 @@ in {
     hunspellDicts.de_DE
     hunspellDicts.en_US
   ] ++ [
-   unstable.jetbrains.idea-ultimate 
+   unstable.jetbrains.idea-ultimate
   ];
 }
