@@ -1,6 +1,4 @@
-{ pkgs, unstable, ... }: 
-let 
-in {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     orca-slicer
     droidcam
@@ -9,6 +7,8 @@ in {
 
 
     kdePackages.krohnkite
+
+    nil
 
     vlc
     parted
@@ -32,9 +32,6 @@ in {
 
     ntfs3g
 
-    # fonts
-    nerdfonts
-
     # zsh theme
     starship
 
@@ -54,7 +51,7 @@ in {
 
     qalculate-gtk
 
-    wl-clipboard
+    jetbrains.idea-ultimate
 
     zip
     unzip
@@ -64,7 +61,5 @@ in {
     libreoffice-qt
     hunspellDicts.de_DE
     hunspellDicts.en_US
-  ] ++ [
-   unstable.jetbrains.idea-ultimate
   ];
 }

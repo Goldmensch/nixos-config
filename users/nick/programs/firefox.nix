@@ -4,12 +4,12 @@
 
     profiles = {
       nick = {
-        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
           proton-pass
           proton-vpn
         ];
         search = {
-          default = "DuckDuckGo";
+          default = "ddg";
           force = true;
         };
         settings = {
