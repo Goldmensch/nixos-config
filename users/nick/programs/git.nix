@@ -4,7 +4,7 @@
     userName = "Goldmensch";
     userEmail = "pm@goldmensch.dev";
     signing = {
-      key = "0x185863298512EE59";
+      key = "0x8512EE59";
       signByDefault = true;
     };
     extraConfig = {
