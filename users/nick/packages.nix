@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
+    ausweisapp
     orca-slicer
     droidcam
 
@@ -51,7 +52,9 @@
 
     qalculate-gtk
 
-    jetbrains.idea-ultimate
+    (jetbrains.idea-ultimate.override {
+      jdk = pkgs.openjdk21;
+    })
 
     zip
     unzip
