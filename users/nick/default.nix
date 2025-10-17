@@ -1,7 +1,7 @@
 { plasma-manager, ... }: {
 
   imports = [
-    plasma-manager.homeManagerModules.plasma-manager
+    plasma-manager.homeModules.plasma-manager
     
     ./packages.nix
     ./programs
@@ -9,6 +9,7 @@
     ./qt.nix
     ./fonts.nix
   ];
+
 
   home = {
     username = "nick";

@@ -8,7 +8,8 @@
       signByDefault = true;
     };
     extraConfig = {
-      core.autocrlf = true;
+      core.autocrlf = "input";
+      core.eol = "lf";
       push.autpSetupRemote = true;
       pull.rebase = true;
       safe.directory = "/etc/nixos";

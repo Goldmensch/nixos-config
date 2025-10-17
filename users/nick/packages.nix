@@ -1,6 +1,5 @@
-{ pkgs, ... }: {
+{ pkgs, nixpkgs-stable, ... }: {
   home.packages = with pkgs; [
-    ausweisapp
     orca-slicer
     droidcam
 
@@ -52,17 +51,16 @@
 
     qalculate-gtk
 
-    (jetbrains.idea-ultimate.override {
-      jdk = pkgs.openjdk21;
-    })
-
     zip
     unzip
-    libsForQt5.ark
+    kdePackages.ark
     
     # libreoffice
     libreoffice-qt
     hunspellDicts.de_DE
     hunspellDicts.en_US
+
+    jetbrains.idea-ultimate
+  ] ++ [
   ];
 }
