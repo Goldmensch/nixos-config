@@ -10,7 +10,7 @@
     extraConfig = {
       core.autocrlf = "input";
       core.eol = "lf";
-      push.autpSetupRemote = true;
+      push.autoSetupRemote = true;
       pull.rebase = true;
       safe.directory = "/etc/nixos";
     };
