@@ -1,4 +1,4 @@
-{ nur, pkgs, nixpkgs-unstable, ... }: {
+{ nur, pkgs,  ... }: {
   imports = [
     ./home-manager.nix
     ./users.nix

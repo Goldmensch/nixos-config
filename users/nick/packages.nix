@@ -1,7 +1,6 @@
-{ pkgs, nixpkgs-stable, ... }: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     orca-slicer
-    droidcam
 
     thunderbird
 
@@ -13,20 +12,16 @@
     vlc
     parted
     exfatprogs
-    cider
     htop
 
     discord
-    webcord
 
-    kitty
     htop
     git
     wget
     zsh
     xdg-utils
-    whatsapp-for-linux
-    playerctl
+    wasistlos
 
     neofetch
 
@@ -34,12 +29,6 @@
 
     # zsh theme
     starship
-
-
-    # screenshots
-    slurp
-    grim
-    swappy
 
     # audio
     pulsemixer
@@ -55,12 +44,12 @@
     unzip
     kdePackages.ark
     
+    (jetbrains.idea-ultimate.override { forceWayland = true;})
+
     # libreoffice
     libreoffice-qt
     hunspellDicts.de_DE
     hunspellDicts.en_US
-
-    jetbrains.idea-ultimate
   ] ++ [
   ];
 }
