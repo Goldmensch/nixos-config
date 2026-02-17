@@ -16,6 +16,9 @@
 
     workspace = {
         lookAndFeel = "org.kde.breezedark.desktop";
+#         wallpaper = [
+#           "/home/nick/config/users/nick/programs/plasma//wallpaper/net.dosowisko.PlasmaApplicationWallpaper"
+#         ];
     };
 
     panels = [

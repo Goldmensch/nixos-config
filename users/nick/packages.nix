@@ -1,5 +1,11 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
+    plasma-wallpaper-application
+
+
+    rcu
+    jbang
+
     orca-slicer
 
     thunderbird

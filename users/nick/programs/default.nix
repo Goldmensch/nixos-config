@@ -9,7 +9,7 @@
     ./firefox.nix
     ./direnv.nix
     ./ssh.nix
-    ./plasma.nix
+    ./plasma
   ];
   programs = {
     home-manager.enable = true;

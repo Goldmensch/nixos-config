@@ -6,6 +6,11 @@
         hostname = "homeserver-nick";
         user = "homie";
       };
+
+      remarkable = {
+        hostname = "192.168.178.153";
+        user = "root";
+      };
     };
   };
 }
