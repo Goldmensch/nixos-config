@@ -17,32 +17,65 @@
     nur.url = "github:nix-community/nur";
   };
 
- outputs = { self, nixpkgs, home-manager, nur, plasma-manager, nixpkgs-stable,...}@inputs: {
-    nixosConfigurations.computhor = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = inputs;
-      modules = [
-        home-manager.nixosModules.home-manager
-
-        ({ pkgs, ... }: {
-          home-manager.extraSpecialArgs = {
-            nixpkgs-stable = import nixpkgs-stable { system = pkgs.hostPlatform.system; config = { allowUnfree = true; }; };
-          };
+ outputs = { self, nixpkgs, home-manager, nur, plasma-manager, nixpkgs-stable,...}@inputs:
+  let
+    system = "x86_64-linux";
+  in
+  {
+      overlays.default = final: prev:
+      let
+        dir = ./packages;
+        isKdePackage = name:
+          builtins.match ".*(plasma|kde).*" name != null;
+        packagePath = name:
+          dir + "/${name}/package.nix";
+      in
+      builtins.listToAttrs(
+      map
+        (name: {
+            inherit name;
+            value =
+              if isKdePackage name
+              then final.kdePackages.callPackage (packagePath name) {}
+              else final.callPackage (packagePath name) {};
         })
+        (builtins.attrNames (builtins.readDir dir))
 
-        ./hosts/computhor
-      ];
+      );
+#       {
+#         plasma-wallpaper-application =
+#           final.kdePackages.callPackage ./packages/plasma-wallpaper-application/package.nix {};
+#         weahtr =
+#           final.pkgs.callPackage ./packages/weathr/package.nix {};
+#       };
+
+      nixosConfigurations.computhor = nixpkgs.lib.nixosSystem {
+        system = system;
+        specialArgs = inputs;
+        modules = [
+          { nixpkgs.overlays = [self.overlays.default ]; }
+
+          home-manager.nixosModules.home-manager
+
+          ({ pkgs, ... }: {
+            home-manager.extraSpecialArgs = {
+              nixpkgs-stable = import nixpkgs-stable { system = pkgs.hostPlatform.system; config = { allowUnfree = true; }; };
+            };
+          })
+
+          ./hosts/computhor
+        ];
+      };
+
+      nixosConfigurations.gpn-computhor = nixpkgs.lib.nixosSystem {
+        system = system;
+        specialArgs = inputs;
+        modules = [
+          home-manager.nixosModules.home-manager
+
+          ./hosts/gpn
+        ];
+      };
     };
-
-    nixosConfigurations.gpn-computhor = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
-      specialArgs = inputs;
-      modules = [
-        home-manager.nixosModules.home-manager
-
-        ./hosts/gpn
-      ];
-    };
-  };
 }
 

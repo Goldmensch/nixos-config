@@ -1,6 +1,8 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
+    weathr
     plasma-wallpaper-application
+    kitty # for terminal wallpaper
 
 
     rcu
