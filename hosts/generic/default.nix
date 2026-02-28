@@ -13,6 +13,7 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [ nur.overlays.default ];
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.trusted-users = ["root" "nick"];
 
   environment.systemPackages = [
     pkgs.ntfs3g

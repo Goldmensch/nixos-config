@@ -5,8 +5,7 @@
     profiles = {
       nick = {
         extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
-          proton-pass
-          proton-vpn
+          bitwarden
         ];
         search = {
           default = "ddg";
@@ -51,8 +50,8 @@
                 "label": "Mainsail"
               },
               {
-                "url": "https://account.proton.me/apps",
-                "label": "Proton Apps"
+                "url": "https://cloud.nickhensel.de",
+                "label": "NextCloud"
               }
             ]
           '';
