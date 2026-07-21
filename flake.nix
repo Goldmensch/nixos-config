@@ -42,12 +42,6 @@
         (builtins.attrNames (builtins.readDir dir))
 
       );
-#       {
-#         plasma-wallpaper-application =
-#           final.kdePackages.callPackage ./packages/plasma-wallpaper-application/package.nix {};
-#         weahtr =
-#           final.pkgs.callPackage ./packages/weathr/package.nix {};
-#       };
 
       nixosConfigurations.computhor = nixpkgs.lib.nixosSystem {
         system = system;

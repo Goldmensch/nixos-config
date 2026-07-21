@@ -10,21 +10,5 @@
         "application/pdf" = "firefox.desktop";
       };
     };
-
-    desktopEntries = {
-      pulsemixer = {
-        name = "Pulsemixer";
-        exec = "pulsemixer";
-        genericName = "Audio Mixer";
-        terminal = true;
-      };
-
-      micro = {
-        name = "Micro";
-        exec = "micro";
-        genericName = "Terminal Editor";
-        terminal = true;
-      };
-    };
   };
 }

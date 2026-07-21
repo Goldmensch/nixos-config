@@ -1,19 +1,10 @@
 { pkgs, ... }: {
   home.packages = with pkgs; [
-    nordpass
+    via
 
-    weathr
-    plasma-wallpaper-application
-    kitty # for terminal wallpaper
-
-
-    rcu
     jbang
 
-    orca-slicer
-
     thunderbird
-
 
     kdePackages.krohnkite
 
@@ -22,7 +13,6 @@
     vlc
     parted
     exfatprogs
-    htop
 
     discord
 
@@ -39,16 +29,8 @@
 
     # zsh theme
     starship
-
-    # audio
-    pulsemixer
      
     gparted
-    polkit_gnome
-
-    prismlauncher
-
-    qalculate-gtk
 
     zip
     unzip
