@@ -70,6 +70,22 @@
           ./hosts/gpn
         ];
       };
+
+      nixosConfigurations.roberto = nixpkgs.lib.nixosSystem {
+        system = system;
+        specialArgs = inputs;
+        modules = [
+          home-manager.nixosModules.home-manager
+
+          ({ pkgs, ... }: {
+            home-manager.extraSpecialArgs = {
+              nixpkgs-stable = import nixpkgs-stable { system = pkgs.hostPlatform.system; config = { allowUnfree = true; }; };
+            };
+          })
+
+          ./hosts/roberto
+        ];
+      };
     };
 }
 
