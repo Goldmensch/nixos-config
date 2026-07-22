@@ -1,7 +1,9 @@
 {
   programs.ssh = {
     enable = true;
-    matchBlocks = {
+    enableDefaultConfig = false;
+
+    settings = {
       homeserver = {
         hostname = "homeserver-nick";
         user = "homie";
