@@ -1,12 +1,9 @@
 { ... }: {
-  boot.loader.grub = {
-    efiSupport = true;
+  boot.loader.limine = {
     enable = true;
-    device = "nodev";
-    useOSProber = true;
-    extraConfig = ''
-    set timeout=-1
-    '';
+    efiSupport = true;
+    secureBoot.enable = true;
+    secureBoot.autoGenerateKeys = true;
   };
   boot.loader.efi = {
     canTouchEfiVariables = true;
