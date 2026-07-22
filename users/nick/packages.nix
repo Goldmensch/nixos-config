@@ -21,9 +21,7 @@
     wget
     zsh
     xdg-utils
-    wasistlos
-
-    neofetch
+    karere
 
     ntfs3g
 
@@ -36,7 +34,7 @@
     unzip
     kdePackages.ark
     
-    (jetbrains.idea-ultimate.override { forceWayland = true;})
+    (jetbrains.idea.override { forceWayland = true;})
 
     # libreoffice
     libreoffice-qt

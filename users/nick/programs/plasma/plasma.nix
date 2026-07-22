@@ -4,6 +4,63 @@
     immutableByDefault = true;
     overrideConfig = true;
 
+    krunner = {
+      position = "top";
+      shortcuts = {
+        launch = "Meta+Space";
+      };
+    };
+
+    kscreenlocker = {
+      autoLock = true;
+      lockOnResume = true;
+      timeout = 5;
+      passwordRequired = true;
+      passwordRequiredDelay = 10;
+
+      appearance = {
+        alwaysShowClock = true;
+        showMediaControls = true;
+
+        wallpaperPictureOfTheDay = {
+          provider = "apod";
+        };
+      };
+    };
+
+    kwin = {
+      titlebarButtons.right = ["minimize" "maximize" "close"];
+
+      effects = {
+        minimization.animation = "squash";
+        wobblyWindows.enable = false;
+        windowOpenClose.animation = "scale";
+      };
+
+
+      nightLight = {
+        enable = true;
+        mode = "automatic";
+      };
+
+      scripts = {
+        polonium = {
+          enable = true;
+
+          settings = {
+            borderVisibility = "borderAll";
+            layout = {
+              engine = "half";
+              insertionPoint = "right";
+            };
+            tilePopups = false;
+            maximizeSingleWindow = true;
+            saveOnTileEdit = true;
+          };
+        };
+      };
+    };
+
     input = {
         keyboard = {
             layouts = [
@@ -16,9 +73,7 @@
 
     workspace = {
         lookAndFeel = "org.kde.breezedark.desktop";
-#         wallpaper = [
-#           "/home/nick/config/users/nick/programs/plasma//wallpaper/net.dosowisko.PlasmaApplicationWallpaper"
-#         ];
+        wallpaperPictureOfTheDay.provider = "apod";
     };
 
     panels = [
@@ -36,33 +91,6 @@
         screen = "all";
       }
     ];
-
-    hotkeys.commands = {
-      "launch-proton" = {
-        name = "Launch Proton";
-        key = "Meta+P";
-        command = "firefox https://account.proton.me/apps";
-      };
-
-      "launch-mail" = {
-        name = "Launch Proton Mail";
-        key = "Meta+Shift+P";
-        command = "firefox https://mail.proton.me";
-      };
-
-      "launch-pass" = {
-        name = "Launch Proton Pass";
-        key = "Meta+Ctrl+P";
-        command = "firefox https://pass.proton.me/";
-      };
-
-      "launch-calender" = {
-        name = "Launch Proton Calender";
-        key = "Meta+Alt+P";
-        command = "firefox https://calendar.proton.me";
-      };
-    };
-
 
     shortcuts = {
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
@@ -119,32 +147,6 @@
       "services/org.kde.spectacle.desktop"."RecordScreent" = "Meta+Alt+R";
       "services/org.kde.spectacle.desktop"."RecordWindow" = "Meta+Ctrl+R";
       "services/org.kde.spectacle.desktop"."_launch" = "Print";
-
-
-      # UNSET
-      "kwin"."KrohnkiteTreeColumnLayout" = [ ];
-      "kwin"."KrohnkitegrowWidth" = [ ];
-      "kwin"."KrohnkiteShrinkHeight" = [ ];
-      "kwin"."KrohnkiteShrinkWidth" = [ ];
-      "kwin"."KrohnkiteSpiralLayout" = [ ];
-      "kwin"."KrohnkiteSpreadLayout" = [ ];
-      "kwin"."KrohnkiteStackedLayout" = [ ];
-      "kwin"."KrohnkiteStairLayout" = [ ];
-      "kwin"."KrohnkiteTileLayout" = [ ];
-      "kwin"."KrohnkiteGrowHeight" = [ ];
-      "kwin"."KrohnkiteIncrease" = [ ];
-      "kwin"."KrohnkiteMonocleLayout" = [ ];
-      "kwin"."KrohnkiteNextLayout" = [ ];
-      "kwin"."KrohnkitePreviousLayout" = [ ];
-      "kwin"."KrohnkiteQuarterLayout" = [ ];
-      "kwin"."KrohnkiteRotate" = [ ];
-      "kwin"."KrohnkiteRotatePart" = [ ];
-      "kwin"."KrohnkiteSetMaster" = [ ];
-      "kwin"."KrohnkiteFocusNext" = [ ];
-      "kwin"."KrohnkiteFocusPrev" = [ ];
-      "kwin"."KrohnkiteDecrease" = [ ];
-      "kwin"."KrohnkiteFloatAll" = [ ];
-      "kwin"."KrohnkiteFloatingLayout" = [ ];
 
       "ksmserver"."Halt Without Confirmation" = [ ];
       "ksmserver"."Log Out" = [ ];
@@ -332,21 +334,10 @@
       "plasmashell"."switch to previous activity" = [ ];
       "plasmashell"."toggle do not disturb" = [ ];
     };
+
     configFile = {
       "plasma-localerc"."Formats"."LANG" = "en_US.UTF-8";
       "plasma-localerc"."Translations"."LANGUAGE" = "en_US";
-
-      "kwinrc"."Plugins"."krohnkiteEnabled" = true;
-      "kwinrc"."Script-krohnkite"."enableBTreeLayout" = true;
-      "kwinrc"."Script-krohnkite"."enableMonocleLayout" = false;
-      "kwinrc"."Script-krohnkite"."enableSpiralLayout" = false;
-      "kwinrc"."Script-krohnkite"."enableSpreadLayout" = false;
-      "kwinrc"."Script-krohnkite"."enableStairLayout" = false;
-      "kwinrc"."Script-krohnkite"."enableThreeColumnLayout" = false;
-      "kwinrc"."Script-krohnkite"."enableTileLayout" = false;
-      "kwinrc"."Script-krohnkite"."monocleMaximize" = false;
-      "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-1:btreelayout,DP-2:btreelayout";
-      "kwinrc"."Script-krohnkite"."tileLayoutGap" = 8;
 
       "kwinrc"."Windows"."FocusPolicy" = "FocusFollowsMouse";
       "kwinrc"."Windows"."SeparateScreenFocus" = true;
