@@ -44,20 +44,20 @@
       };
 
       scripts = {
-        polonium = {
-          enable = true;
-
-          settings = {
-            borderVisibility = "borderAll";
-            layout = {
-              engine = "half";
-              insertionPoint = "right";
-            };
-            tilePopups = false;
-            maximizeSingleWindow = true;
-            saveOnTileEdit = true;
-          };
-        };
+#         polonium = {
+#           enable = true;
+#
+#           settings = {
+#             borderVisibility = "borderAll";
+#             layout = {
+#               engine = "half";
+#               insertionPoint = "right";
+#             };
+#             tilePopups = false;
+#             maximizeSingleWindow = true;
+#             saveOnTileEdit = true;
+#           };
+#         };
       };
     };
 
@@ -349,6 +349,30 @@
 
       "spectaclerc"."ImageSave"."translatedScreenshotsFolder" = "Screenshots";
       "spectaclerc"."VideoSave"."translatedScreencastsFolder" = "Screencasts";
+
+      "kwinrc"."Plugins"."krohnkiteEnabled" = true;
+      "kwinrc"."Script-krohnkite"."enableBTreeLayout" = true;
+      "kwinrc"."Script-krohnkite"."enableMonocleLayout" = false;
+      "kwinrc"."Script-krohnkite"."enableSpiralLayout" = false;
+      "kwinrc"."Script-krohnkite"."enableSpreadLayout" = false;
+      "kwinrc"."Script-krohnkite"."enableStairLayout" = false;
+      "kwinrc"."Script-krohnkite"."enableThreeColumnLayout" = false;
+      "kwinrc"."Script-krohnkite"."enableTileLayout" = false;
+      "kwinrc"."Script-krohnkite"."monocleMaximize" = false;
+      "kwinrc"."Script-krohnkite"."screenDefaultLayout" = "DP-1:btreelayout,DP-2:btreelayout";
+      "kwinrc"."Script-krohnkite"."tileLayoutGap" = 8;
+
+#       kwinrc.Script-polonium."Borders[$i]" = 3;
+#       kwinrc.Script-polonium.DefaultEngine = 1;
+#       kwinrc.Script-polonium."EngineType[$i]" = 1;
+#       kwinrc.Script-polonium.HalfInsertInActive = true;
+#       kwinrc.Script-polonium.HalfKeepMaster = true;
+#       kwinrc.Script-polonium."InsertionPoint[$i]" = 1;
+#       kwinrc.Script-polonium."MaximizeSingle[$i]" = true;
+#       kwinrc.Script-polonium."SaveOnTileEdit[$i]" = true;
+#       kwinrc.Script-polonium."TilePopups[$i]" = false;
+#       kwinrc.Script-polonium.UseDBusSaver = true;
+
     };
   };
 }
