@@ -3,6 +3,7 @@
     via
 
     jbang
+    kdePackages.isoimagewriter
 
     thunderbird
 
