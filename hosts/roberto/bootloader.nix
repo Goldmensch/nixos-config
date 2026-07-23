@@ -6,6 +6,6 @@
     secureBoot.autoGenerateKeys = true;
   };
   boot.loader.efi = {
-    canTouchEfiVariables = true;
+    canTouchEfiVariables = false;
   };
 }
