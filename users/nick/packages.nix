@@ -35,7 +35,8 @@
     unzip
     kdePackages.ark
     
-    (jetbrains.idea.override { forceWayland = true;})
+    jetbrains.idea
+#     (jetbrains.idea.override { forceWayland = true; jdk = jetbrains.jdk; })
 
     # libreoffice
     libreoffice-qt
