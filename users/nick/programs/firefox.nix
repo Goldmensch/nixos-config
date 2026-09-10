@@ -44,7 +44,7 @@
                 "label": "Cups"
               },
               {
-                "url": "http://192.168.178.167:8123",
+                "url": "http://192.168.178.168:8123",
                 "label": "HomeAssistant"
               },
               {
